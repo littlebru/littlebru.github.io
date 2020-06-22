@@ -6037,6 +6037,16 @@ a.close.disabled {
           animation: spinner-grow 0.75s linear infinite;
 }
 
+.maintenance {
+  padding: 30px;
+  color: whitesmoke;
+  background-color: #aa61fb;
+  border-radius: 20px;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 133px;
+}
+
 .spinner-grow-sm {
   width: 1rem;
   height: 1rem;
