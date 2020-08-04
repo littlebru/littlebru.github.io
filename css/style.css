@@ -1,88 +1,103 @@
-html{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Rajdhani', sans-serif;
+:root {
+  font-family: 'Josefin Sans', sans-serif;
+  --background: rgba(255, 136, 97, 40%);
+  --shadow-button: rgb(237, 103, 0);
+  --orange: rgb(255, 158, 97);
 }
 
 body {
-	padding-top: 30px;
-	background-color: #343A40;
+  height: 100vh;
+  width: 100%;
 }
 
 .doodle {
-  top: 0;
-  left: 0;
+  z-index: -100;
   position: fixed;
-  z-index: -1;
 }
 
 .info {
-  display: block;
-  justify-content: center;
-  background-color: rgba(208, 211, 214, 0.06);
-  box-shadow: 1px 1px 5px 8px rgba(39, 39, 49, 0.3);
-  border-radius: 20px;
-  padding: 30px 60px;
-  margin: 20px 20px;
-  position:  relative;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  height: 560px;
 }
 
-.profile img {
-  max-width: 15rem;
-  max-height: 10rem;
+.card {
+  position: relative;
+  background: var(--background);
+  height: 60%;
+  border-radius: 20px;
+  padding-top: 228px;
+  padding-bottom: 5px;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+
+.img-profile {
+  width: 50%;
   border-radius: 50%;
-  border: 0.3rem repeating-linear-gradient(to right, #c4e17f 50px, #f7fdca 50px, #fad071 50px, #f0766b, #db9dbe, #c49cdf, #6599e2, #61c2e4);;
-  margin-left: 25px;
-  padding-bottom: 10px;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, 20%);
+}
+
+.links {
+  width: 343px;
+  height: 231px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 35px;
+  grid-gap: 20px;
+  padding-top: 23px;
 }
 
 a {
-	background-color: rgb(52, 58, 64);
-    border-radius: 7px;
-    box-shadow: 0.2px 2px 3px 1px rgb(38, 43, 47);
-    display: block;
-    color: rgb(61, 183, 132);
-	padding: 5px;
-	margin: 10px -5px;
-	width: 100%;
-	font-size: 25px;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	font-family: 'Rajdhani', sans-serif;
-	transition: .5s ease;
-	text-decoration: none;
+  background: rgb(255, 124, 82);
+  text-align: center;
+  color: rgb(237, 237, 237);
+  height: 35px;
+  width: 65%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 2px 2px 2px var(--shadow-button);
+  transition: 0.5s ease;
+  text-transform: uppercase;
 }
 
-.site {
-	font-size: 16px;
-	color: whitesmoke;
-	background-color: rgb(37,197,160);
-  	box-shadow: 1px 1px 1px 1px rgb(27, 155, 125);
-  	transition: 0.5s ease;
+a:hover {
+  background-color: var(--orange);
+  box-shadow: 2px 6px 5px 1px rgb(255, 127, 46);
+  transform: translate(-50%, -65%);  
 }
 
-a:hover{
-  color: whitesmoke;
-  background-color: rgb(37,197,160);
-  box-shadow: 1px 3px 2px 2px rgb(27, 155, 125);
-  transform: translateY(-5px);
+a.site {
+  font-size: 14px;
 }
 
-a:active{
-  transition: .1s ease;
-  background-color: rgb(27, 155, 125);
-  color: rgb(17, 91, 74);
-  box-shadow: inset 2px 3px 2px 1px rgb(25, 127, 103);
-  transform: translateY(0px);
+a.site:hover {
+  font-size: 15px;
 }
 
-.info-author{
-  margin: 20px 0px 20px;
-  font-size: 13px;
-  display:center;
-  color: #bdbdbd;
+a.icon {
+  font-size: 20px;  
 }
+
+a.icon:hover {
+  font-size: 24px;
+}
+
