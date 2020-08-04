@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -9,42 +10,41 @@
         </title>
         <link rel="icon" type="image/png" href="dist/assets/img/favicon.png" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./reset.css">
         <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <css-doodle class="doodle">
-        :doodle {
-          @grid: 50 / 100vmax;
+      :doodle {
+        @grid: 50 / 100vmax;
+        background: #fff;
+      }
+      @random { border-top: 6px solid #fff; }
+      @random { border-left: 1px solid #fff; }
+      @random(.9) {
+        :after {
+          content: ' ';
+          background: hsl(@rand(40), 90%, 70%);
+          @size: @rand(30px);
+          @ shape: diamond;
         }
-        @random { border-top: 1px solid #343A40; }
-        @random { border-left: 1px solid #343A40; }
-        @random(.2) {
-          :after {
-            content: '';
-            background: hsl(@rand(360), 80%, 60%);
-            @size: @rand(3px);
-          }
-        }
-           
+      }
     </css-doodle>
   <div class="info">
-    <div class="profile">
-       <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" alt="" />
-    </div>
-        <a class="site" href="dist/about.html">WebSite</a>
-        <a href="https://github.com\littlebru" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
-        <a href="https://www.linkedin.com/in/bruna-gomes-a8739014b?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
-        <a href="https://codepen.io/littlebru" target="_blank"><i class="fab fa-codepen" title="CodePen"></i> </a>
-        <a href="mailto:brunaclegomes@outlook.com" ><i class="fas fa-envelope" title="Email"></i></a>
-        
-      <div class="info-author">
-        <p class="author">Developed with 🤍 by Bruna Gomes</p>
+    <div class="card grid">
+      <img class="img-profile" src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" alt="" />
+      
+      <div class="links">
+          <a class="site" href="#">WebSite</a>
+          <a class="icon" href="https://github.com\littlebru" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
+          <a class="icon" href="https://www.linkedin.com/in/bruna-gomes-a8739014b?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+          <a class="icon" href="https://twitter.com/__littlebru?s=09" target="_blank"><i class="fab fa-twitter" title="Twitter"></i> </a>
+          <a class="icon" href="mailto:brunaclegomes@outlook.com" ><i class="fas fa-envelope" title="Email"></i></a>     
+      </div>
       </div>
     </div>
   </body>
-
-  
-</hmtl>
+</html>
