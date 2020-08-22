@@ -16,111 +16,35 @@
         <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
   </head>
-  <!--
-░░░░░░╭╮╭╮░░░░░░
-░░░░░░┃┃┃┃░░░░░░
-░░░░░░┃┃┃┃░░░░░░
-░░░░░░┃┗┛┣┳╮░░░░
-░░░░░╭┻━━┓┃┃░░░░
-░░░░░┃╲┏━╯┻┫░░░░
-░░░░░╰╮╯┊┊╭╯░░░░
-# IF YOU LIKED :D PLEASE !
-◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈◈☻◈☻◈☻◈☻◈☻
-░█▀▀░█▀▀█░█░░░█░░░█▀▀█░█░░█░░█░░░░█▀▀█▀▀█░█▀▀░
-░█▀▀░█░░█░█░░░█░░░█░░█░█░░█░░█░░░░█░░█░░█░█▀▀░
-░█░░░█▄▄█░█▄▄░█▄▄░█▄▄█░█▄▄█▄▄█░░░░█░░█░░█░█▄▄░
-◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈☻◈◈☻◈☻◈☻◈☻◈☻
-# Twitter: @__littlebru
-# Codepen: @littlebru
-# Github: @littlebru
-# Email: brunaclegomes@outlook.com
--->
-
 <body>
-  <header>
-    <nav>
-      <a href="#home"><img class="logo-nav" src="" alt="logo-image"></a><!--Logo preta com site preto e branco-->
+    <css-doodle class="doodle">
+      :doodle {
+        @grid: 50 / 100vmax;
+        background: #fff;
+      }
+      @random { border-top: 6px solid #fff; }
+      @random { border-left: 1px solid #fff; }
+      @random(.9) {
+        :after {
+          content: ' ';
+          background: hsl(@rand(40), 90%, 70%);
+          @size: @rand(30px);
+          @ shape: diamond;
+        }
+      }
+    </css-doodle>
+  <div class="info">
+    <div class="card grid">
+      <img class="img-profile" src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" alt="" />
       
-      <ul class="navbar compact-navbar">
-        <li class="page-link"><a href="#skill">Skills</a></li>
-        <li class="page-link"><a href="#portifolio">Portifolio</a></li>
-        <li class="page-link"><a href="#about">About</a></li>
-        <li class="page-link"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <div class="container header-container" id="home">
-      <!--Home-->
-      
-      <div class="title-container">
-        <!--Adicionar effeito glitch na imagem -->
-        <img class="image-profile" src="" alt="image-profile" >
-        <h1>Bruna Gomes</h1>
+      <div class="links">
+          <a class="site" href="#">WebSite</a>
+          <a class="icon" href="https://github.com\littlebru" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
+          <a class="icon" href="https://www.linkedin.com/in/bruna-gomes-a8739014b?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+          <a class="icon" href="https://twitter.com/__littlebru?s=09" target="_blank"><i class="fab fa-twitter" title="Twitter"></i> </a>
+          <a class="icon" href="mailto:brunaclegomes@outlook.com" ><i class="fas fa-envelope" title="Email"></i></a>     
       </div>
-      
-      <div class="subtitle-container">
-        <a class="profile-link link-github"  href="" alt="github link">Link do Github</a>
-        <a  class="profile-link link-linkedin" href="" alt="linkedin link">Link do LinkedIn</a>
-      </div>
-    </div>
-    
-    <div class="container skill-container" id="skill">
-      <!-- Skills  -->
-      <div class="skills-icon">
-        <img class="icon" src="" alt="language">  
       </div>
     </div>
-    
-    <div class="portifolio-container" id="portifolio">
-      <!--Portifolio-->
-      
-    </div>
-    
-    <div class="container about-container" id="about">
-      <!--About me -->
-      <div class="description-section">
-        <img class="image-profile" src="" alt="image-profile">
-        <p class="profile-description">
-          Description
-        </p>
-      </div>
-      
-      <div class="cards">
-        <p>Cards</p>
-        <!-- Cards circles made in canvas -->
-      </div>
-    </div>
-    
-    <div class="contact-container" id="contact">
-      <form action="" class="contact">
-        <input type="text" class="email" value="Email do usuario">
-        <textarea name="" id="" cols="" rows="" class="message">
-          Mensagem para entrar em contato
-        </textarea>
-        <a href="" class="send">Send</a>
-      </form>
-    </div>
-  </main>
-  
-  <footer>
-    <h2 class="email-footer"></h2>
-    
-    <div class="media">
-      <a href="" class="social-media link-github"><img src="" alt="social-media"></a>
-      <a href="" class="social-media link-linkedin"><img src="" alt="social-media"></a>
-      <a href="" class="social-media link-twitter"><img src="" alt="social-media"></a>
-      <a href="" class="social-media link-codepen"><img src="" alt="social-media"></a>
-    </div>
-    
-    <div class="copyright">
-      <p>
-        Made with  by Bruna Gomes - 	&copy; Copyright 2020
-        ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 💕
-      </p>
-    </div>
-  </footer>
-  
-</body>
+  </body>
 </html>
