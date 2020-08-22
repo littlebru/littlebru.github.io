@@ -29,11 +29,21 @@ body {
 
 .back {
     float: left;
-    top: 20px;
+    top: 27px;
     left: 25px;
     font-size: 24px;
     display: block;
     position: absolute;
+}
+
+.back:hover{
+    color: var(--color-button-active);
+    text-shadow: 1px 3px 10px var(--color-button-background-shadow);
+}
+
+.back:active{
+    color: var(--color-button-active);
+    text-shadow: 1px 3px 10px var(--color-button-background-shadow);
 }
 
 .container {
@@ -121,7 +131,7 @@ i {
     color: var(--color-text-link);
 }
 
-@media (min-width: 500px){
+@media (min-width: 600px){
     img {
         width: 20rem;
     }
@@ -136,6 +146,7 @@ i {
     }
 
     .back {
+        left: 80px;
         font-size: 38px;
     }
 }
