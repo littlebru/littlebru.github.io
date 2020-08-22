@@ -27,6 +27,15 @@ body {
     width: 100vw;
 }
 
+.back {
+    float: left;
+    top: 20px;
+    left: 25px;
+    font-size: 24px;
+    display: block;
+    position: absolute;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -124,5 +133,9 @@ i {
 
     .social-medias {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .back {
+        font-size: 38px;
     }
 }
