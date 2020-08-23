@@ -3,7 +3,7 @@
     --color-text-link: rgba(238, 238, 238, 0.664);
     --color-text-link-active: rgb(241, 241, 241);
     --color-buttons: rgb(38, 37, 44);
-    --color-button-active: rgb(235, 80, 80);
+    --color-button-active: rgb(212, 61, 61);
     --color-button-shadow: rgb(197, 38, 41);
     --color-button-background-shadow: rgba(255, 40, 44, 80%);
 }
@@ -16,8 +16,8 @@ html, body{
 
 body {
     background-color: var(--color-background);
-    color: whitesmoke;
     font-family: 'Nunito', sans-serif;
+    color: var(--color-text-link-active);
 
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ p {
 
 .main-text {
     font-size: 30px;
-    text-shadow: 1px 2px 10px red;
+    text-shadow: 1px 2px 10px var(--color-text-link);
 }
 
 .social-medias {
@@ -99,8 +99,10 @@ a{
     transition: .3s ease-out;
 }
 
-a .icon {
-    color: var(--color-buttons);
+.icon {
+    color: var(--color-background);
+
+    transition: 0.2s ease-in;
 }
 
 .button {
@@ -129,6 +131,10 @@ a .icon {
 
 }
 
+.button:hover .icon{
+    color: var(--color-text-link-active);
+}
+
 .button:active {
     background-color: rgb(115 9 9);
     box-shadow: 0px -3px 1px rgb(88 18 19);
@@ -148,7 +154,6 @@ i {
 
     .main-text {
         font-size: 40px;
-        text-shadow: 1px 2px 10px red;
     }
 
     .social-medias {
