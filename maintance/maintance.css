@@ -27,25 +27,6 @@ body {
     width: 100vw;
 }
 
-.back {
-    float: left;
-    top: 27px;
-    left: 25px;
-    font-size: 24px;
-    display: block;
-    position: absolute;
-}
-
-.back:hover{
-    color: var(--color-button-active);
-    text-shadow: 1px 3px 10px var(--color-button-background-shadow);
-}
-
-.back:active{
-    color: var(--color-button-active);
-    text-shadow: 1px 3px 10px var(--color-button-background-shadow);
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -61,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    transition: .3s ease-out;
+    transition: .3s ease-out
 }
 
 img {
@@ -71,14 +52,14 @@ img {
 }
 
 p {
-    font-size: 1.2rem;
     text-align: center;
     top: 20px;
 }
 
 .main-text {
+    color: var(--color-text-link-active);
     font-size: 30px;
-    text-shadow: 1px 2px 10px var(--color-text-link);
+    text-shadow: 1px 2px 10px rgba(255,255,255,80%);
 }
 
 .social-medias {
@@ -100,7 +81,7 @@ a{
 }
 
 .icon {
-    color: var(--color-background);
+    color: var(--color-text-link-active);
 
     transition: 0.2s ease-in;
 }
@@ -136,8 +117,8 @@ a{
 }
 
 .button:active {
-    background-color: rgb(115 9 9);
-    box-shadow: 0px -3px 1px rgb(88 18 19);
+    background-color: rgb(115, 9, 9);
+    box-shadow: 0px -3px 1px rgb(88, 18, 19);
     transform: translateY(0px);
     color: #963c3c;
 }
@@ -145,6 +126,45 @@ a{
 i {
     margin-right: 10px;
     color: var(--color-text-link);
+}
+
+
+.back-section {
+    float: left;
+    top: 12px;
+    left: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    transition: .3s ease;
+}
+
+.back {
+    font-size: 32px;
+    position: initial;
+    
+    transition: .3s ease;
+}
+
+.back-section:hover{
+    cursor: pointer;
+}
+
+.back-section:hover .back{
+    color: var(--color-text-link-active);
+    text-shadow: 1px 3px 10px var(--color-text-link-active);
+}
+
+.back-section:active .back{
+    color: var(--color-button-active);
+    text-shadow: 1px 3px 10px var(--color-button-background-shadow);
 }
 
 @media (min-width: 600px){
@@ -163,5 +183,18 @@ i {
     .back {
         left: 80px;
         font-size: 38px;
+    }
+
+    .back-section {
+        left: 72px;
+        top: 27px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        color: var(--color-background);
     }
 }
