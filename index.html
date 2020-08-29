@@ -10,41 +10,41 @@
         </title>
         <link rel="icon" type="image/png" href="dist/assets/img/favicon.png" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="./css/style.css">
+        <link rel="stylesheet"  href="./css/reset.css">
         <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
   </head>
-<body>
-    <css-doodle class="doodle">
-      :doodle {
-        @grid: 50 / 100vmax;
-        background: #fff;
-      }
-      @random { border-top: 6px solid #fff; }
-      @random { border-left: 1px solid #fff; }
-      @random(.9) {
-        :after {
-          content: ' ';
-          background: hsl(@rand(40), 90%, 70%);
-          @size: @rand(30px);
-          @ shape: diamond;
-        }
-      }
-    </css-doodle>
-  <div class="info">
-    <div class="card grid">
-      <img class="img-profile" src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" alt="" />
+  <body>
+  <div class="card-back">
+    <section class="header-card"></section>
+    <div class="card">
+	  <img class="img-profile" src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" alt="" />
+	  
+	  <div class="name">
+		<p>Bruna Gomes</p>
+	  </div>
       
       <div class="links">
-          <a class="site" href="maintance/maintance.html">WebSite</a>
           <a class="icon" href="https://github.com\littlebru" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
-          <a class="icon" href="https://www.linkedin.com/in/bru-gomes" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
-          <a class="icon" href="https://twitter.com/__littlebru?s=09" target="_blank"><i class="fab fa-twitter" title="Twitter"></i> </a>
+          <a class="icon" href="https://www.linkedin.com/in/bruna-gomes-a8739014b?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+          <a class="icon" href="https://twitter.com/__littlebru?s=09" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
           <a class="icon" href="mailto:brunaclegomes@outlook.com" ><i class="fas fa-envelope" title="Email"></i></a>     
+	  </div>
+	  
+	  <div class="description">
+		<p class="about">
+			Formada como Técnico em Informática<br><br>
+			Cursando 4º Semestre em Análise e Desenvolvimento de Sistemas
+		</p>
+	  </div>
+      
+      <div class="website-link-area">
+        <a class="button-site" href="#">Portifolio</a>
       </div>
-      </div>
+	</div>
     </div>
   </body>
 </html>
