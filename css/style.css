@@ -67,6 +67,9 @@ p{
 .name {
   position: relative;
   top: -15px;
+
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .links {
