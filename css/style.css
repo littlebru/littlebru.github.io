@@ -59,7 +59,7 @@ p{
   width: 8rem;
   margin-bottom: 1rem;
   position: absolute;
-  top: 7rem;
+  top: 6rem;
   
   border-radius: 50%;
 }
@@ -135,7 +135,7 @@ p{
   grid-template-columns: 3fr;
 
   position: relative;
-    top: 64px;
+  top: 1rem;
 }
 
 .button-site {
