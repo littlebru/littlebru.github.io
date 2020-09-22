@@ -58,15 +58,15 @@ p{
 .img-profile {
   width: 8rem;
   margin-bottom: 1rem;
-  position: absolute;
-  top: 6rem;
+  position: relative;
+  bottom: 3rem;
   
   border-radius: 50%;
 }
 
 .name {
   position: relative;
-  top: -15px;
+  bottom: 3rem;
 
   font-size: 21px;
   font-weight: 500;
@@ -74,7 +74,7 @@ p{
 
 .links {
   position: relative;
-  top: -6px;
+  bottom: 3rem;
   
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -112,7 +112,7 @@ p{
 
 .description {
   position: relative;
-  top: 5px;
+  bottom: 3.4rem;
 
   display: flex;
   justify-content: center;
@@ -135,7 +135,7 @@ p{
   grid-template-columns: 3fr;
 
   position: relative;
-  top: 1rem;
+  bottom: 3rem;
 }
 
 .button-site {
